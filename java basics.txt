@@ -1,0 +1,76 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        int a= sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        
+        System.out.println("Numbers:");
+        System.out.println("The Numbers are:"+a);
+        System.out.println("The Numbers are:"+b);
+        System.out.println("The Numbers are:"+c);
+        if (a>=b && b>=c)
+        {
+            System.out.println("A is greater than B and C");
+        }
+        if (b>=a && b>=c)
+        {
+            System.out.println("B is grater than A and C");
+        }
+        if (c>=a && c>=b)
+        {
+            System.out.println("C is grater than A and B");
+        }
+    }
+}
+
+
+/* "static void main" must be defined in a public class.
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        int marks= sc.nextInt();
+        System.out.println("Enter Marks:");
+        if (marks>=90)
+        {
+            System.out.println("O");
+        }
+        if (marks>= 80 && marks<90)
+        {
+            System.out.println("A");
+        }
+        if (marks>=60 && marks<80)
+        {
+            System.out.println("B");
+        }
+        if (marks<60)
+        {
+            System.out.println("C");
+        }
+        
+    }
+}
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        int num= sc.nextInt();
+        
+        System.out.println("Number is :"+num);
+        
+        for (int i = 2; i*i <= num / 2; ++i) 
+        {
+            if (num % i == 0) 
+            {
+                System.out.println("Not Prime");
+                return;
+            } 
+           
+            
+        }
+        System.out.println("Prime");
+    }
+}*\
